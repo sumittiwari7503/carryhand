@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-500 hover:bg-brand-600 active:bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-800 font-semibold px-6 py-3 rounded-xl border border-gray-200 transition-all duration-200 shadow-sm;
+  }
+  .btn-outline {
+    @apply border-2 border-brand-500 text-brand-600 hover:bg-brand-50 font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all bg-white text-gray-900 placeholder:text-gray-400;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold;
+  }
+  .status-pending { @apply badge bg-yellow-100 text-yellow-700; }
+  .status-accepted { @apply badge bg-blue-100 text-blue-700; }
+  .status-active { @apply badge bg-green-100 text-green-700; }
+  .status-completed { @apply badge bg-gray-100 text-gray-600; }
+  .status-cancelled { @apply badge bg-red-100 text-red-600; }
+  .status-rejected { @apply badge bg-red-100 text-red-600; }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 50%, #fed7aa 100%);
+}
+
+.hero-gradient {
+  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #fb923c; border-radius: 3px; }

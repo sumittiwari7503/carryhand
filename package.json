@@ -1,0 +1,16 @@
+{
+  "name": "carryhand",
+  "version": "1.0.0",
+  "description": "CarryHand - On-Demand Shopping Assistance Platform",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["shopping", "assistant", "on-demand", "nodejs", "react"],
+  "author": "CarryHand Team",
+  "license": "MIT"
+}
