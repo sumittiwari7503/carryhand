@@ -328,4 +328,4 @@ Set `VITE_API_URL` if not using Vite proxy.
 
 ## 📄 License
 
-MIT © 2024 CarryHand
+MIT © 2026 CarryHand
